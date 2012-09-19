@@ -1,4 +1,4 @@
-cmake_mimimum_required (VERSION 2.6)
+cmake_minimum_required(VERSION 2.8)
 project(ecubee)
 
 set (ecubee_VERSION_MAJOR 0)

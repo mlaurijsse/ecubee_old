@@ -1,2 +1,4 @@
 *.[oa]
 *~
+CMake*
+!CMakeLists.txt
