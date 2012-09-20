@@ -30,6 +30,7 @@ target_link_libraries(ecubee osg)
 target_link_libraries(ecubee osgViewer)
 target_link_libraries(ecubee osgSim)
 target_link_libraries(ecubee osgUtil)
+target_link_libraries(ecubee osgGA)
 
 # Other libs
 target_link_libraries(ecubee m)
