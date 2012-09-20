@@ -4,10 +4,11 @@ project(ecubee)
 set (ecubee_VERSION_MAJOR 0)
 set (ecubee_VERSION_MINOR 1)
 
-include_directories("/usr/include")
-
+#include_directories("/usr/include")
 
 add_executable(ecubee main.cpp)
+
+target_link_libraries(ecubee libosg)
 
 install(TARGETS ecubee DESTINATION bin)
 
