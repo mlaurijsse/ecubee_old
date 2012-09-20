@@ -1,3 +1,6 @@
+# Ecubee Cmake configuration
+# @TODO: Support for Bart, Gert-Jan and Martijn
+
 #initialize project
 cmake_minimum_required(VERSION 2.8)
 project(ecubee)
@@ -15,6 +18,9 @@ SET (SRC main.cpp
 	i2cManager.cpp
 	LIS3LV02DL.cpp
 	rs232.cpp)
+
+# Compile for Bart
+set(CMAKE_CXX_FLAGS "-D BART")
 
 
 add_executable(ecubee ${SRC})
