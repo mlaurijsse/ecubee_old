@@ -4,6 +4,8 @@ project(ecubee)
 set (ecubee_VERSION_MAJOR 0)
 set (ecubee_VERSION_MINOR 1)
 
+include_directories("/usr/include")
+
 add_executable(ecubee main.cpp)
 
 install(TARGETS ecubee DESTINATION bin)
