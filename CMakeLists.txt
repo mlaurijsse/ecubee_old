@@ -20,7 +20,7 @@ target_link_libraries(ecubee m)
 target_link_libraries(ecubee dl)
 target_link_libraries(ecubee GL)
 target_link_libraries(ecubee GLU)
-target_link_libraries(ecubee pthread)
+target_link_libraries(ecubee OpenThreads)
 target_link_libraries(ecubee Xext)
 target_link_libraries(ecubee X11)
 
