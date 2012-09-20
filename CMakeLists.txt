@@ -8,7 +8,10 @@ set (ecubee_VERSION_MINOR 1)
 
 add_executable(ecubee main.cpp)
 
-target_link_libraries(ecubee libosg)
+target_link_libraries(ecubee osg)
+target_link_libraries(ecubee osgViewer)
+target_link_libraries(ecubee osgSim)
+target_link_libraries(ecubee osgUtil)
 
 install(TARGETS ecubee DESTINATION bin)
 
