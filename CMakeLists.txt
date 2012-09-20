@@ -5,9 +5,19 @@ project(ecubee)
 set (ecubee_VERSION_MAJOR 0)
 set (ecubee_VERSION_MINOR 1)
 
-#include_directories("/usr/include")
+SET (SRC main.cpp
+	acos.cpp
+	Box.cpp
+	communicator.cpp
+	CreateWindows.cpp
+	CustomCamera.cpp
+	HMC5843.cpp
+	i2cManager.cpp
+	LIS3LV02DL.cpp
+	rs232.cpp)
 
-add_executable(ecubee main.cpp)
+
+add_executable(ecubee ${SRC})
 
 # OSG libs
 target_link_libraries(ecubee osg)
